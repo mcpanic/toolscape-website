@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ToolScape | Enhancing How-to Videos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<link href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+
+        <style>
+            body {
+            	background-image: url('img/bg.jpg');
+            	font-family: "Lato";
+            }
+			/* http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 2em;
+				height: 0;
+			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}   
+
+			iframe.demo{
+				/*zoom: 0.15;*/
+			    -moz-transform:scale(0.85);
+			    -moz-transform-origin: 0 0;
+			    -o-transform: scale(0.85);
+			    -o-transform-origin: 0 0;
+			    -webkit-transform: scale(0.85);
+			    -webkit-transform-origin: 0 0;
+			}
+			/*  ==========================================================================
+			 	Publications
+				========================================================================== */
+
+			.pub-section{
+				margin-left: 0;
+			}
+
+			.publication .author{
+				font-weight: bold;
+			}
+
+			.publication .title{
+				font-weight: bold;	
+				font-size: 15px;
+			}
+
+			.publication .venue{
+				font-style: italic;
+				margin-right: 5px;
+			}
+
+			.publication .toappear{
+				font-style: italic;
+				margin-right: 5px;
+			}
+
+			.publication .material{
+				margin-left: 3px;
+				margin-right: 3px;
+			}
+
+			.publication{
+				margin-left: 0;
+			}
+
+			.publication li {
+				line-height:18px;
+				margin-bottom: 14px;
+				/*margin-left:-10px;*/
+				font-size:12px;
+				list-style-type:none;
+			}
+
+			.award{
+			  background-color: crimson;
+			  color: #eee;
+			  padding-left: 0.5em;
+			  padding-right: 0.5em;
+			}            
+        </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ToolScape</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#toolscape">Toolscape interface</a></li>
+            <li><a href="#crowdsourcing">Crowdsourcing workflow</a></li>            
+            <li><a href="#people">People</a></li>
+            <li><a href="#publications">Publications</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<h1>ToolScape</h1>
+			<h4>Improving the learning experience of how-to videos</h4>
+			<div class="row">
+				<div class="col-md-6 col-sm-8  col-xs-12 teaser">
+					Millions of learners today use how-to videos to master new skills in a variety of domains. But browsing such videos is often tedious and inefficient because video player interfaces are not optimized for the unique step-by-step structure of such videos. This research aims to improve the learning experience of existing how-to videos with step-by-step annotations.
+					<br/><br/><br/>
+				</div>	        	
+				<div class="col-md-6 col-sm-4 col-xs-12">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-8 col-xs-12">
+					<div class="videoWrapper">
+					<iframe src="http://www.youtube.com/embed/142QQijjPzc?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">&nbsp;</div>
+			</div>		
+		</div>
+
+
+		<div class="row subsection">
+			<h1 class="col-md-12 col-sm-12 col-xs-12" id="toolscape">ToolScape: Step-Aware Video Player</h1>
+			<div class="col-md-6 col-sm-8 col-xs-12">
+				ToolScape is an interactive video player that displays step descriptions and intermediate result thumbnails in the video timeline. Learners in our study performed better and gained more self-efficacy using ToolScape versus a traditional video player. 
+			</div>
+			<div class="col-md-6 col-sm-4 col-xs-12">&nbsp;</div>
+			<h3 class="col-md-12 col-sm-12 col-xs-12">Annotated Screenshot</h3>
+			<img class="col-md-6 col-sm-8 col-xs-12" src="img/player-new.png">
+			<div class="col-md-6 col-sm-4 col-xs-12">&nbsp;</div>
+			<h3 class="col-md-12 col-sm-12 col-xs-12">Interactive Demo</h3>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<a href="http://juhokim.com/tochi-supplement/watch_1_52.html" target="_blank">Demo: Video Timeline</a>			
+				<br/>
+				<a href="http://juhokim.com/tochi-supplement/list.html?iid=1" target="_blank">Demo: Storyboard Summarization</a>	
+			</div>
+<!-- 			<h3 class="col-md-12">Demo: Video Timeline</h3>			
+			<div class="col-md-12">
+				<iframe class="demo" width="100%" frameborder="0" height="600px" src="http://juhokim.com/tochi-supplement/watch_1_52.html"></iframe>
+			</div>
+			<h3 class="col-md-12">Demo: Storyboard Summarization</h3>			
+			<div class="col-md-12">
+				<iframe class="demo" width="100%" frameborder="0" height="600px" src="http://juhokim.com/tochi-supplement/list.html?iid=1"></iframe>
+			</div> -->
+
+		</div>
+
+		<div class="row subsection">
+			<h1 class="col-md-12 col-sm-12 col-xs-12"  id="crowdsourcing">Crowdsourcing workflow</h1>
+			<div class="col-md-6 col-sm-8 col-xs-12">
+				To add the needed step annotations to existing how-to videos at scale, we introduce a novel crowdsourcing workflow. It extracts step-by-step structure from an existing video, including step times, descriptions, and before and after images. We introduce the Find-Verify-Expand design pattern for temporal and visual annotation, which applies clustering, text processing, and visual analysis algorithms to merge crowd output. The workflow does not rely on domain-specific customization, works on top of existing videos, and recruits untrained crowd workers. We evaluated the workflow with Mechanical Turk, using 75 cooking, makeup, and Photoshop videos on YouTube. Results show that our workflow can extract steps with a quality comparable to that of trained annotators across all three domains with 77% precision and 81% recall.        	
+	        </div>	
+			<div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+			
+			<div class="col-md-6 col-sm-8 col-xs-12">				
+				<img width="100%" src="img/teaser.png">
+			</div>
+			<div class="col-md-6 col-sm-4 col-xs-12">&nbsp;</div>
+
+			<h3 class="col-md-12 col-sm-12 col-xs-12">Stage 1. <strong>Find</strong> candidate steps</h3>
+			<img class="col-md-4 col-sm-6 col-xs-8" src="img/stage1-m1-no-instructions.png">
+			
+			<h3 class="col-md-12 col-sm-12 col-xs-12">Stage 2. <strong>Verify</strong> steps by voting or improving</h3>
+			<img class="col-md-4 col-sm-6 col-xs-8" src="img/stage2-m-no-instructions.png">
+
+			<h3 class="col-md-12 col-sm-12 col-xs-12">Stage 3. <strong>Expand</strong> steps with before/after images</h3>
+			<img class="col-md-4 col-sm-6 col-xs-8" src="img/stage3-m-no-instructions.png">
+		</div>
+
+		<div class="row subsection">
+			<h1 class="col-md-12 col-sm-12 col-xs-12"  id="people">People</h1>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+			<ul>
+				<li class="people"><a href="http://juhokim.com/" target="_blank">Juho Kim</a> (MIT CSAIL)</li>
+				<li class="people"><a href="#" target="_blank">Phu Nguyen</a> (MIT CSAIL)</li>
+				<li class="people"><a href="#" target="_blank">Sarah Weir</a> (MIT CSAIL)</li>
+				<li class="people"><a href="http://pgbovine.net/" target="_blank">Philip J. Guo</a> (MIT CSAIL, University of Rochester)</li>
+				<li class="people"><a href="http://www.eecs.harvard.edu/~kgajos/" target="_blank">Krzysztof Z. Gajos</a> (Harvard EECS)</li>
+				<li class="people"><a href="http://people.csail.mit.edu/rcm/" target="_blank">Robert C. Miller</a> (MIT CSAIL)</li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="row subsection">
+			<h1 class="col-md-12 col-sm-12 col-xs-12" id="publications">Publications</h1>			
+			<div class="col-md-8 col-sm-12 col-xs-12">
+			<ul>
+				<li id="C9"><div class="title"><a href="http://juhokim.com/files/CHI2014-ToolScape.pdf">Crowdsourcing Step-by-Step Information Extraction to Enhance Existing How-to Videos</a></div><div class="authors"><span class="author">Juho Kim</span>, Phu Nguyen, Sarah Weir, Philip J. Guo, Robert C. Miller, Krzysztof Z. Gajos</div><span class="venue">CHI 2014.</span><span class="toappear">to appear</span><span class="award">Honorable Mention Award (top 5% of all submissions)</span></li>
+				<li id="P7"><div class="title"><a href="http://juhokim.com/files/CHI2013-src-toolscape.pdf">ToolScape: Enhancing the Learning Experience of How-to Videos</a></div><div class="authors"><span class="author">Juho Kim</span></div><span class="venue">CHI 2013 Extended Abstracts.</span><span class="award">2nd place, student research competition</span><span class="material"><a href="http://juhokim.com/files/CHI2013-SRC-ToolScape-Poster.pdf">(poster)</a></span><span class="material"><a href="http://juhokim.com/files/CHI2013-SRC-ToolScape-Slides.pdf">(slides)</a></span><span class="material"><a href="http://dl.acm.org/citation.cfm?id=2479497">(acm dl)</a></span></li>
+				<li id="P6"><div class="title"><a href="http://juhokim.com/files/CHI2013-wip-crowdsourcing.pdf">Generating Annotations for How-to Videos Using Crowdsourcing</a></div><div class="authors">Phu Nguyen, <span class="author">Juho Kim</span>, Robert C. Miller</div><span class="venue">CHI 2013 Extended Abstracts.</span><span class="material"><a href="http://juhokim.com/files/CHI2013-wip-crowdsourcing-poster.pdf">(poster)</a></span><span class="material"><a href="http://dl.acm.org/citation.cfm?id=2468506">(acm dl)</a></span></li>						
+			</ul>
+			</div>
+		</div>
+
+    <hr>
+
+    <footer>
+        <p>Juho Kim | for questions, please email <a href="mailto:juho+toolscape@juhokim.com">juho@juhokim.com</a></p>
+    </footer>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    -->
+    </body>
+</html>
